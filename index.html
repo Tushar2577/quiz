@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Valentine's Day Quiz ❤️</title>
+    <link rel="icon" type="image/x-icon" href="assets/heart.png">
+</head>
+<body>
+
+        <div class="completion-message" id="completionMessage">🎉 Congratulations, dear! These are all the correct answers! 🎉</div>
+        <div class="imperfect-message" id="imperfectMessage">💔 There were some mistakes, but you still did well! Try again! 💔</div>
+        <audio id="victorySound" src="music/victory.mp3"></audio>    
+
+        
+    <div class="container">
+        <div class="score-board" id="scoreDisplay">Score: 0/0</div>
+        <h1>Tushar & Kirti Valentine's Day Quiz ❤️</h1>
+        <div class="heart">♥</div>
+
+        <!-- Questions (same structure as before) -->
+        <div class="question-box">
+            <div class="question">When Is Our Date Of Staring Realtion?</div>
+            <div class="option"  onclick="handleAnswer(this, 'incorrect')">20 Feburary</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')">1 April</div>
+            <div class="option" data-correct="true" onclick="handleAnswer(this, 'correct')">1 May</div>
+        </div>
+
+        <div class="question-box">
+            <div class="question">Who Propse Or Said 'I love you' first?</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')">At The Same Time</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')">Kirti</div>
+            <div class="option" data-correct="true" onclick="handleAnswer(this, 'correct')">Tushar</div>
+        </div>
+
+        <div class="question-box">
+            <div class="question">Who Like Fight More?</div>
+            <div class="option" data-correct="true" onclick="handleAnswer(this, 'correct')">Both</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')">Tushar</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')">Kirti</div>
+        </div>
+        <div class="question-box">
+            <div class="question">Who Loves The Most According To Tushar?</div>
+            <div class="option" data-correct="true" onclick="handleAnswer(this, 'correct')">Kirti</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')">Tushar</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')">Both</div>
+        </div>
+        <div class="question-box">
+            <div class="question">Tushar And Kirti's Birthday?</div>
+            <div class="option" data-correct="true" onclick="handleAnswer(this, 'correct')">4 November and 19 May</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')"> 21 November and 10 May</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')">  18 December and 21 April</div>
+        
+        </div>
+         <div class="question-box">
+            <div class="question">How Much Tushar Shows Love❤️?</div>
+            <div class="option" data-correct="true" onclick="handleAnswer(this, 'correct')">Krta hai Bohot Jyda Par mujhe Pta hai Vo usse bhi jyadaaa krta hai😘❤️😍🥰</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')"> Bohot jyaadaaaa walaaa krta hai😘</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')">Krdeta hai😳</div>
+        
+        </div>
+        </div>
+         <div class="question-box">
+            <div class="question">Tushar Kaisa hai?</div>
+            <div class="option" data-correct="true" onclick="handleAnswer(this, 'correct')">Mera hai😘</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')"> Achaaa hai🥰</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')">Pagal😳</div>
+        
+        </div>
+        </div>
+         <div class="question-box">
+            <div class="question">Mere paas Kitne Kurte hai😭</div>
+            <div class="option" data-correct="true" onclick="handleAnswer(this, 'correct')">1</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')"> Bohot sare</div>
+            <div class="option" onclick="handleAnswer(this, 'incorrect')">2🥰</div>
+        
+        </div>
+        
+        
+        
+         
+
+
+
+        <!-- Add more questions here -->
+    </div>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
